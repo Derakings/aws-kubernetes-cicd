@@ -1,5 +1,44 @@
+# Terraform
 .terraform/
 *.tfstate
+*.tfstate.*
 *.tfstate.backup
 .terraform.lock.hcl
 *.tfvars.backup
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Sensitive files (keep tfvars but could be risky if contains secrets)
+# Uncomment if your tfvars have sensitive data:
+# *.tfvars
+
+# SSH Keys
+*.pem
+*.key
+*.pub
+
+# AWS Credentials
+.aws/
+credentials
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*~
